@@ -8,6 +8,7 @@ use app\models\tables\TaskSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\models\SignupForm;
 
 /**
  * AdminTaskController implements the CRUD actions for Tasks model.
