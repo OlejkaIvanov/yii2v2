@@ -144,7 +144,7 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionRequestPasswordReset()
+    public function actionRequestPasswordReset ()
     {
         $model = new PasswordResetRequestForm();
 
@@ -169,7 +169,7 @@ class SiteController extends Controller
      * @return mixed
      * @throws BadRequestHttpException
      */
-    public function actionResetPassword($token)
+    public function actionResetPassword ($token)
     {
         try {
             $model = new ResetPasswordForm($token);
@@ -184,5 +184,7 @@ class SiteController extends Controller
 
         return $this->render('resetPassword', [
             'model' => $model,
-      }
+        ]);
+
+    }
 }
